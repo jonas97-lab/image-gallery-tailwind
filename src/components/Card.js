@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Card = ({ image }) => {
 	const tags = image.tags.split(',');
 
@@ -23,11 +25,10 @@ const Card = ({ image }) => {
 							{image.likes}
 						</li>
 					</ul>
-
-					<div className='px-6 py-4'>
+					<div className='py-4'>
 						{tags.map((tag, index) => (
 							<span
-								className='inline-block px-3 py-1 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full'
+								className='inline-block px-3 py-1 mr-1 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full'
 								key={index}
 							>
 								#{tag}

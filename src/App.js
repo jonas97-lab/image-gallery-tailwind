@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from './components/Card';
 import Search from './components/Search';
@@ -37,7 +37,7 @@ function App() {
 				)}
 				{!isLoading && images.length < 1 && (
 					<h1 className='flex items-center justify-center text-2xl font-semibold'>
-						There are no images available ...{' '}
+						There are no images available ...
 					</h1>
 				)}
 			</div>

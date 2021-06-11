@@ -13,13 +13,13 @@ const Search = ({ getData }) => {
 			<div class='mr-6 my-2'>
 				<form onSubmit={handleSubmit}>
 					<input
-						className='px-3 py-2 mb-12 border-0 rounded shadow bg-purple-white'
+						className='px-3 py-2 mb-12 shadow-sm bg-purple-white focus:outline-none'
 						placeholder='Search by name...'
 						type='text'
 						onChange={(e) => setText(e.target.value)}
 					/>
 					<button
-						className='px-4 py-2 ml-2 font-bold text-white bg-blue-300 rounded-md focus:outline-none'
+						className='px-4 py-2 font-bold text-white bg-blue-300 shadow-sm hover:bg-blue-400 focus:outline-none'
 						type='submit'
 					>
 						Click
